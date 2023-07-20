@@ -1,10 +1,7 @@
 
 const express = require("express");
-<<<<<<< HEAD
-=======
 const http = require('http');
 const mongoose = require("mongoose");
->>>>>>> 997f04a1fa1be3b4e584641bd20472fa41002192
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const usersRoutes = require("./routes/users-routes");
