@@ -44,13 +44,13 @@ app.use((error, req, res, next) => {
   res.status(error.code || 500);
   res.json({ message: error.message || "An unknown error occurred!" });
 });
-mongoose
-  .connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.wu6wj.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
-    , { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => server)
-  .catch((err) => {
-    console.log(err);
-  });
+// mongoose
+//   .connect(
+//     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.wu6wj.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
+//     , { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => server)
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 
